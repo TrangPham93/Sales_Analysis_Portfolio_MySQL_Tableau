@@ -20,7 +20,7 @@ This is an DEA on sales dataset.
 
 # Data exploration in MySQL
 
-´´´sql
+```sql
 /*
 ## Importing excel file to Workbench, however, the Order_Date and Shipping_Date are not correctly imported as date type.
  
@@ -42,7 +42,7 @@ WHERE
     order_ID <> 0
 
 ;
-´´´
+```
 
 # Data visualization in Tableau
 
