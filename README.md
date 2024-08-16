@@ -172,6 +172,7 @@ ORDER BY total_profit ASC
 ```
 
 |Category| Sub_Category| total_sales| total_profit|
+|---|---|---|---|
 |'Furniture'| 'Tables'| '18232.76'| '-2708.5'|
 
 
