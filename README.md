@@ -97,6 +97,8 @@ change column Shipping_Date_modified Shipping_Date date;
 
 ## Data exploration
 
+#### 1. Sales and Profit by Country
+
 ```sql
 
 -- 1. Sales and Profit by Country
@@ -104,7 +106,8 @@ change column Shipping_Date_modified Shipping_Date date;
 SELECT 
     c.Country,
     ROUND(SUM(o.Sales), 2) AS total_sales,
-    ROUND(SUM(o.Profit), 2) AS total_profit
+    ROUND(SUM(o.Profit), 2) AS total_profit,
+    concat(round(sum(o.Profit)/sum(o.Sales)*100),'%') as profit_margin_percentage
 FROM
     sales_non_eu.orders o
         JOIN
@@ -114,12 +117,14 @@ ORDER BY total_profit DESC
 ;
 
 ```
-|Country|total_sales|total_profit|
-|---|---|---|
-|Germany|829066.72|	100477.25|
-|USA|    904327.95|	93866|
-|France|918969.28|	87871.23|
-|Italy|	192105.24|	20852.22|
+|Country|total_sales|total_profit|profit_margin_percentage|
+|---    |---        |---         |---                     |
+|Germany|  829066.72|	100477.25|                     12%|
+|USA    |  904327.95|	    93866|                     10%|
+|France |  918969.28|	 87871.23|                     10%|
+|Italy  |  192105.24|	 20852.22|                     11%|
+
+--> France is the market that generate highest sales, however Germany is the most profitable market, which generate the highest profit rate at 12%. Italy has smallest sales however ranked in 2nd in profit margin. 
 
 # Data visualization in Tableau
 
