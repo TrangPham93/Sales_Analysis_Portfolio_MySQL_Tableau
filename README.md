@@ -97,7 +97,7 @@ change column Shipping_Date_modified Shipping_Date date;
 
 ## Data exploration
 
-#### 1. Sales and Profit by Country
+### 1. Sales and Profit by Country?
 
 ```sql
 
@@ -105,9 +105,9 @@ change column Shipping_Date_modified Shipping_Date date;
 
 SELECT 
     c.Country,
-    ROUND(SUM(o.Sales), 2) AS total_sales,
-    ROUND(SUM(o.Profit), 2) AS total_profit,
-    concat(round(sum(o.Profit)/sum(o.Sales)*100),'%') as profit_margin_percentage
+    round(SUM(o.Sales), 2) AS total_sales,
+    round(SUM(o.Profit),2) AS total_profit,
+    concat(format(sum(o.Profit)/sum(o.Sales)*100,0),'%') as profit_margin_percentage
 FROM
     sales_non_eu.orders o
         JOIN
@@ -117,6 +117,7 @@ ORDER BY total_profit DESC
 ;
 
 ```
+
 |Country|total_sales|total_profit|profit_margin_percentage|
 |---    |---        |---         |---                     |
 |Germany|  829066.72|	100477.25|                     12%|
@@ -125,6 +126,30 @@ ORDER BY total_profit DESC
 |Italy  |  192105.24|	 20852.22|                     11%|
 
 --> France is the market that generate highest sales, however Germany is the most profitable market, which generate the highest profit rate at 12%. Italy has smallest sales however ranked in 2nd in profit margin. 
+
+### 2.  Sales & Profit by Category?
+
+```sql
+SELECT 
+    p.Category,
+    ROUND(SUM(o.Sales), 2) AS total_sales,
+    ROUND(SUM(o.Profit), 2) AS total_profit,
+    concat(round(sum(o.Profit)/sum(o.Sales)*100),'%') as profit_margin
+FROM
+    sales_non_eu.orders o
+        JOIN
+    sales_non_eu.products p ON o.Product_ID = p.Product_ID
+        JOIN
+    sales_non_eu.customers c ON o.Customer_ID = c.Customer_ID
+GROUP BY 1 
+ORDER BY total_sales desc
+;
+```
+Category total_sales total_profit profit_margin
+Furniture	104222.25	3515.62	3%
+Office Supplies	52840.15	11446.79	22%
+Technology	33519.78	5545.85	17%
+
 
 # Data visualization in Tableau
 
