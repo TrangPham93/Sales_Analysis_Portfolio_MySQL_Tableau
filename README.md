@@ -145,12 +145,14 @@ GROUP BY 1
 ORDER BY total_sales desc
 ;
 ```
-|Category| total_sales| total_profit| profit_margin|
-|---|---|---|---|
-|Furniture|	104222.25|	3515.62|	3%|
-|Office| Supplies|	52840.15|	11446.79|	22%|
-|Technology|	33519.78|	5545.85|	17%|
 
+|Category| total_sales| sales_percentage|total_profit|profit_percentage| profit_margin|
+|---|---|---|---|---|---|
+|Furniture|	104222.25|	54.69%|	3515.62|	17.14%|	3%|
+|Office Supplies|	52840.15|	27.73%|	11446.79|	55.82%|	22%|
+|Technology|	33519.78|	17.59%|	5545.85|	27.04%|	17%|
+
+--> Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
 
 # Data visualization in Tableau
 
