@@ -114,6 +114,12 @@ ORDER BY total_profit DESC
 ;
 
 ```
+|Country|total_sales|total_profit|
+|---|---|---|
+|Germany|829066.72|	100477.25|
+|USA|    904327.95|	93866|
+|France|918969.28|	87871.23|
+|Italy|	192105.24|	20852.22|
 
 # Data visualization in Tableau
 
