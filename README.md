@@ -67,6 +67,7 @@ Do similarly for Shipping_date column
 */
 
 -- 1.
+
 alter table sales_non_eu.orders
 add column Shipping_Date_modified date; 
 
@@ -95,6 +96,24 @@ change column Shipping_Date_modified Shipping_Date date;
 ```
 
 ## Data exploration
+
+```sql
+
+-- 1. Sales and Profit by Country
+
+SELECT 
+    c.Country,
+    ROUND(SUM(o.Sales), 2) AS total_sales,
+    ROUND(SUM(o.Profit), 2) AS total_profit
+FROM
+    sales_non_eu.orders o
+        JOIN
+    sales_non_eu.customers c ON o.Customer_ID = c.Customer_ID
+GROUP BY Country
+ORDER BY total_profit DESC
+;
+
+```
 
 # Data visualization in Tableau
 
