@@ -11,9 +11,9 @@ This is an DEA on sales dataset.
 - [Objective](#Objective)
 - [Data source](#Data-source)
 - [Data exploration in MySQL](#Data-exploration-in-MySQL)
-- [Data cleaning](Data-cleaning)
-    - [Data exploration](Data-exploration)
-    - [Data visualization in Tableau](#Data-visualization-in-Tableau)
+    - [Data cleaning](#Data-cleaning)
+    - [Data exploration](#Data-exploration)
+- [Data visualization in Tableau](#Data-visualization-in-Tableau)
 - [Data visualization in PowerBI](#Data-visualization-in-PowerBI)
 
 # Objective
