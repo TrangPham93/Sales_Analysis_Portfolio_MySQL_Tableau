@@ -145,10 +145,11 @@ GROUP BY 1
 ORDER BY total_sales desc
 ;
 ```
-Category total_sales total_profit profit_margin
-Furniture	104222.25	3515.62	3%
-Office Supplies	52840.15	11446.79	22%
-Technology	33519.78	5545.85	17%
+|Category| total_sales| total_profit| profit_margin|
+|---|---|---|---|
+|Furniture|	104222.25|	3515.62|	3%|
+|Office| Supplies|	52840.15|	11446.79|	22%|
+|Technology|	33519.78|	5545.85|	17%|
 
 
 # Data visualization in Tableau
