@@ -26,15 +26,20 @@ This is an DEA on sales dataset.
 
 ```sql
 /*
-## Importing excel file to Workbench, however, the Order_Date and Shipping_Date are not correctly imported as date type.
+Importing excel file to Workbench, however, the Order_Date and Shipping_Date are not correctly imported as date type.
  
-## Add column order_date_modified
+1. Add column order_date_modified
+2. Change Order_date from String type to Date type and add to new Order_date_modified column
+3. Drop column order_date, change the name of new order_date_modified to replace the original order_date.
+
 */
+
+-- 1.
 
 alter table sales_non_eu.orders
 add column order_date_modified date;
 
-## Change Order_date from String type to Date type and add to new Order_date_modified column
+-- 2. 
 
 UPDATE sales_non_eu.orders 
 SET 
@@ -45,10 +50,27 @@ SET
 WHERE
     order_ID <> 0
 
-## Similarly, addi Shipping_date_modified column and convert String to Date type, and add the data to new shipping_date_modified column
+-- 3.
 
 alter table sales_non_eu.orders
+drop column Order_Date;
+
+alter table sales_non_eu.orders
+change column order_date_modified Order_Date date;
+
+/*
+Do similarly for Shipping_date column
+
+1. Add Shipping_date_modified column
+2. Convert String to Date type, and add the data to new shipping_date_modified column
+3. Drop column shipping_date, change the name of new shipping_date_modified to replace the original shippping_date column
+*/
+
+-- 1.
+alter table sales_non_eu.orders
 add column Shipping_Date_modified date; 
+
+-- 2.
 
 UPDATE sales_non_eu.orders 
 SET 
@@ -61,13 +83,7 @@ SET
 WHERE
     Order_ID <> 0;
 
-## Drop column order_date and shipping_date, change the name of new order_date_modified and shipping_date_modified to replace the original order_date and shippping_date column
-
-alter table sales_non_eu.orders
-drop column Order_Date;
-
-alter table sales_non_eu.orders
-change column order_date_modified Order_Date date;
+-- 3. 
 
 alter table sales_non_eu.orders
 drop column Shipping_Date;
