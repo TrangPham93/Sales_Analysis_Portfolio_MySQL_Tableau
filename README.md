@@ -17,6 +17,8 @@ This is an DEA on sales dataset.
         - [Sales & Profit by Category?](#Sales-&-Profit-by-Category-?)
         - [Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
         - [Top selling products in each category](#Top-selling-products-in-each-category)
+        - [Distribution of customers by country](#Distribution-of-customers-by-country)
+        - [Distribution of customers by score](#Distribution-of-customers-by-score)
 - [Data visualization in Tableau](#Data-visualization-in-Tableau)
 - [Data visualization in PowerBI](#Data-visualization-in-PowerBI)
 
@@ -101,7 +103,7 @@ change column Shipping_Date_modified Shipping_Date date;
 
 ## Data exploration
 
-### 1.Sales and Profit by Country
+### Sales and Profit by Country
 
 ```sql
 
@@ -131,7 +133,7 @@ ORDER BY total_profit DESC
 
 --> France is the market that generate highest sales, however Germany is the most profitable market, which generate the highest profit rate at 12%. Italy has smallest sales however ranked in 2nd in profit margin. 
 
-### 2.  Sales & Profit by Category?
+### Sales & Profit by Category
 
 ```sql
 SELECT 
@@ -189,7 +191,7 @@ ORDER BY total_profit ASC;
 
 --> Table subcategory has generated no profit at all, even though it still generate high sales in all countries. In US, bookcases are also in the same position.
 
-### 3. Orders with highest sales during 2022
+### Orders with highest sales during 2022
 
 ```sql
 SELECT 
@@ -230,7 +232,7 @@ LIMIT 5
 
 --> Bookcases orders generate high sales, however they don't guarantee profit all the time, for example the case of US order. 
 
-### 4. Top selling products in each category
+### Top selling products in each category
 
 ```sql
 with RankedProducts as
@@ -267,7 +269,7 @@ WHERE
 
 --> These products are best sellers in each categories, with staple paper of the higest sold quantity.
 
-### 5. Distribution of customers by country
+### Distribution of customers by country
 
 ```sql
 SELECT 
@@ -293,7 +295,7 @@ ORDER BY customer_count DESC
 
 --> Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
 
-### 6. Distribution of customers by score
+### Distribution of customers by score
 
 ```sql
 SELECT 
