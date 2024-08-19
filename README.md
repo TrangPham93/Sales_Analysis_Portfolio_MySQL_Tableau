@@ -15,6 +15,7 @@ This is an DEA on sales dataset.
     - [Data exploration](#Data-exploration)
         - [Sales and Profit by Country](#Sales-and-Profit-by-Country)
         - [Sales & Profit by Category](#Sales-&-Profit-by-Category)
+        - [Non-profitable products](#Non-profitable-products)
         - [Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
         - [Top selling products in each category](#Top-selling-products-in-each-category)
         - [Distribution of customers by country](#Distribution-of-customers-by-country)
@@ -161,7 +162,7 @@ ORDER BY total_sales desc
 --> Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
 
 
-
+### Non-profitable products
 
 ```sql
 SELECT 
