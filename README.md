@@ -224,6 +224,43 @@ LIMIT 5
 |9775	|4228.704	|6	|0.2	|158.5764	|2022-11-24	|2022-12-03	|27	|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|Italy	|Bergamo	|52|
 |8515	|2396.2656	|4	|0.32	|-317.1528	|2022-08-05	|2022-08-18	|27	|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|USA	|Portland	|0|
 
+--> Bookcases orders generate high sales, however they don't guarantee profit all the time, for example the case of US order. 
+
+### 4. Top selling products in each category
+
+```sql
+with RankedProducts as
+(SELECT 
+    p.Category,
+    p.Product_Name, 
+    SUM(o.Quantity) AS sold_quantity,
+    RANK() over (partition by p.category order by sum(o.quantity) desc ) as product_rank
+    
+FROM
+    sales_non_eu.orders o
+        JOIN
+    sales_non_eu.products p ON o.Product_ID = p.Product_ID
+        JOIN
+    sales_non_eu.customers c ON o.Customer_ID = c.Customer_ID
+GROUP BY 1,2
+order by sold_quantity desc)
+SELECT 
+    Category,
+    Product_Name,
+    sold_quantity
+FROM
+    RankedProducts
+WHERE
+    product_rank = 1
+;
+
+```
+|Category	|Product_Name	|sold_quantity|
+|Office Supplies	|Easy-staple paper	|183|
+|Furniture	|9-3/4 Diameter Round Wall Clock	|84|
+|Technology	|Logitech K350 2.4Ghz Wireless Keyboard	|58|
+
+
 
 
 # Data visualization in Tableau
