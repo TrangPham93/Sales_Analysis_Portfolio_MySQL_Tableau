@@ -293,6 +293,34 @@ ORDER BY customer_count DESC
 
 --> Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
 
+### 6. Distribution of customers by score
+
+```sql
+SELECT 
+    CASE
+        WHEN score < 20 THEN ' under 20'
+        WHEN score BETWEEN 20 AND 39 THEN '20-39'
+        WHEN score BETWEEN 40 AND 59 THEN '40-59'
+        WHEN score BETWEEN 60 AND 79 THEN '60-79'
+        ELSE '80 and above'
+    END AS score_group,
+    COUNT(*) AS customer_count
+FROM
+    sales_non_eu.customers
+GROUP BY score_group
+order by score_group
+;
+```
+|score_group	|customer_count|
+| under 20	|205|
+|20-39	|150|
+|40-59	|159|
+|60-79	|135|
+|80 and above	|151|
+
+
+
+
 # Data visualization in Tableau
 
 # Data visualization in PowerBI
