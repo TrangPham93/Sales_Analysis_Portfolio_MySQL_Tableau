@@ -218,7 +218,7 @@ LIMIT 5
 
 | Order_ID	|Sales	|Quantity	|Discount	|Profit	|Order_Date	|Shipping_Date	|Product_ID	|Product_Name	|Category	|Sub_Category	|Country	|City	|Score|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|7615	|4404.9	5	|0	|1013.127	|2022-06-08	|2022-06-11	27	|Riverside Palais Royal Lawyers |Bookcase, Royale Cherry Finish	Furniture	|Bookcases	|Germany	|KÃ¶ln	|17|
+|7615	|4404.9	|5	|0	|1013.127	|2022-06-08	|2022-06-11	27	|Riverside Palais Royal Lawyers |Bookcase, Royale Cherry Finish	Furniture	|Bookcases	|Germany	|KÃ¶ln	|17|
 |8270	|4228.704	|6	|0.2	|158.5764	|2022-03-18	|2022-04-13	|27	Riverside Palais Royal Lawyers |Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|Italy	|Torino	|43|
 |9127	|4228.704	|6	|0.2	|158.5764	|2022-09-03	|2022-09-26	|27	Riverside Palais Royal Lawyers |Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|France	|Reims	|23|
 |9775	|4228.704	|6	|0.2	|158.5764	|2022-11-24	|2022-12-03	|27	Riverside Palais Royal Lawyers |Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|Italy	|Bergamo	|52|
