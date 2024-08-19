@@ -13,6 +13,10 @@ This is an DEA on sales dataset.
 - [Data exploration in MySQL](#Data-exploration-in-MySQL)
     - [Data cleaning](#Data-cleaning)
     - [Data exploration](#Data-exploration)
+        - [1. Sales and Profit by Country?](#1.Sales_and_Profit_by_Country?)
+        - [2.  Sales & Profit by Category?](#2.Sales_&_Profit_by_Category?)
+        - [ 3. Orders with highest sales during 2022](#3.Orders_with_highest_sales_during_2022)
+        - [4. Top selling products in each category](#4.Top_selling_products_in_each_category)
 - [Data visualization in Tableau](#Data-visualization-in-Tableau)
 - [Data visualization in PowerBI](#Data-visualization-in-PowerBI)
 
@@ -256,6 +260,7 @@ WHERE
 
 ```
 |Category	|Product_Name	|sold_quantity|
+|---|---|---|
 |Office Supplies	|Easy-staple paper	|183|
 |Furniture	|9-3/4 Diameter Round Wall Clock	|84|
 |Technology	|Logitech K350 2.4Ghz Wireless Keyboard	|58|
