@@ -16,7 +16,7 @@ This is an DEA on sales dataset.
         - [1. Sales and Profit by Country?](#1-.-Sales-and-Profit-by-Country-?)
         - [2. Sales & Profit by Category?](#2.Sales-&-Profit-by-Category-?)
         - [3. Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
-        - [4. Top selling products in each category](#4.Top_selling_products_in_each_category)
+        - [4. Top selling products in each category](#4-.-Top-selling-products-in-each-category)
 - [Data visualization in Tableau](#Data-visualization-in-Tableau)
 - [Data visualization in PowerBI](#Data-visualization-in-PowerBI)
 
@@ -267,7 +267,31 @@ WHERE
 
 --> These products are best sellers in each categories, with staple paper of the higest sold quantity.
 
+### 5. Distribution of customers by country
 
+```sql
+SELECT 
+    Country,
+    ROUND(AVG(score)) AS Average_score,
+    COUNT(*) AS Customer_count,
+    ROUND(COUNT(*) / (SELECT 
+                    COUNT(*)
+                FROM
+                    sales_non_eu.customers) * 100) AS Percentage
+FROM
+    sales_non_eu.customers
+GROUP BY Country 
+ORDER BY customer_count DESC
+;
+```
+|Country	|Average_score	|Customer_count	|Percentage|
+|---|---|---|---|
+|USA	|42	|254	|32|
+|France	|47	|246	|31|
+|Germany	|48	|241	|30|
+|Italy	|53	|59	|7|
+
+--> Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
 
 # Data visualization in Tableau
 
