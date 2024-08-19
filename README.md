@@ -154,26 +154,32 @@ ORDER BY total_sales desc
 
 --> Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
 
+
 ```sql
 SELECT 
     p.Category,
     p.Sub_Category,
+    c.country,
     ROUND(SUM(o.Sales), 2) AS total_sales,
     ROUND(SUM(o.Profit), 2) AS total_profit
 FROM
     sales_non_eu.orders o
         JOIN
     sales_non_eu.products p ON o.Product_ID = p.Product_ID
-        
-GROUP BY 1 , 2
+        JOIN
+    sales_non_eu.customers c ON c.Customer_ID = o.Customer_ID
+GROUP BY 1 , 2 , 3
 HAVING total_profit < 0
 ORDER BY total_profit ASC
-;
 ```
 
 |Category| Sub_Category| total_sales| total_profit|
 |---|---|---|---|
-|'Furniture'| 'Tables'| '18232.76'| '-2708.5'|
+|Furniture| Tables| 18232.76| -2708.5|
+
+--> Table subcategory has generated no profit at all, even though it still generate high sales. 
+
+
 
 
 # Data visualization in Tableau
