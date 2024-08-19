@@ -14,7 +14,7 @@ This is an DEA on sales dataset.
     - [Data cleaning](#Data-cleaning)
     - [Data exploration](#Data-exploration)
         - [Sales and Profit by Country](#Sales-and-Profit-by-Country)
-        - [Sales & Profit by Category?](#Sales-&-Profit-by-Category-?)
+        - [Sales & Profit by Category](#Sales-&-Profit-by-Category)
         - [Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
         - [Top selling products in each category](#Top-selling-products-in-each-category)
         - [Distribution of customers by country](#Distribution-of-customers-by-country)
