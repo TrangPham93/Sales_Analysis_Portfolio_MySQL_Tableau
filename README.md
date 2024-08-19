@@ -300,6 +300,22 @@ ORDER BY customer_count DESC
 
 ```sql
 SELECT 
+    MIN(score), MAX(Score)
+FROM
+    sales_non_eu.customers;
+
+```
+
+|MIN(score)	|MAX(Score)|
+|---|---|
+|0	|100|
+
+--> min value of score is 0 and max value is 100, so the range can be divided into 5 bins. 
+
+```sql
+
+    
+SELECT 
     CASE
         WHEN score < 20 THEN ' under 20'
         WHEN score BETWEEN 20 AND 39 THEN '20-39'
@@ -307,22 +323,23 @@ SELECT
         WHEN score BETWEEN 60 AND 79 THEN '60-79'
         ELSE '80 and above'
     END AS score_group,
-    COUNT(*) AS customer_count
+    COUNT(*) AS customer_count,
+    concat(round(count(*)/(select count(*) from sales_non_eu.customers)*100),'%') customers_percentage
 FROM
     sales_non_eu.customers
 GROUP BY score_group
 order by score_group
 ;
 ```
-|score_group	|customer_count|
-|---|---|
-| under 20	|205|
-|20-39	|150|
-|40-59	|159|
-|60-79	|135|
-|80 and above	|151|
+|score_group	|customer_count|customers_percentage|
+|---|---|---|
+| under 20	|205	|26%|
+|20-39	|150	|19%|
+|40-59	|159	|20%|
+|60-79	|135	|17%|
+|80 and above	|151	|19%|
 
--->
+--> the largest group of customers has score of under 20. 
 
 
 
