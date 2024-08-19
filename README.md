@@ -13,7 +13,7 @@ This is an DEA on sales dataset.
 - [Data exploration in MySQL](#Data-exploration-in-MySQL)
     - [Data cleaning](#Data-cleaning)
     - [Data exploration](#Data-exploration)
-        - [1.Sales and Profit by Country](#1.Sales-and-Profit-by-Country)
+        - [1.Sales and Profit by Country](#1.-Sales-and-Profit-by-Country)
         - [2. Sales & Profit by Category?](#2.Sales-&-Profit-by-Category-?)
         - [3. Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
         - [4. Top selling products in each category](#4-.-Top-selling-products-in-each-category)
