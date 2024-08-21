@@ -346,4 +346,12 @@ order by score_group
 
 # Data visualization in Tableau
 
+![Sales Dashboard](Assets/images/Sales_Dashboard.pdf)
+
+![Customer Dashboard](Assets/images/Customer_Dashboard.pdf)
+
+![Products Dashboard](Assets/images/Products_Dashboard.pdf)
+
+Link to the dynamic dashboard in Tableau Public: https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes
+
 # Data visualization in PowerBI
