@@ -352,6 +352,7 @@ order by score_group
 
 ![Products Dashboard](Assets/images/products_dashboard.png)
 
-Link to the dynamic dashboard in Tableau Public: https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes
+Link to the dynamic dashboard in Tableau Public: 
+https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes
 
 # Data visualization in PowerBI
