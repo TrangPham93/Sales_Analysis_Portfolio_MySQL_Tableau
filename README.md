@@ -4,8 +4,6 @@ This is an DEA on sales dataset.
 
 😎😎
 
-(add emoji shortcut: window + '.')
-
 # Table of content
 
 - [Objective](#Objective)
@@ -21,7 +19,7 @@ This is an DEA on sales dataset.
         - [Distribution of customers by country](#Distribution-of-customers-by-country)
         - [Distribution of customers by score](#Distribution-of-customers-by-score)
 - [Data visualization in Tableau](#Data-visualization-in-Tableau)
-- [Data visualization in PowerBI](#Data-visualization-in-PowerBI)
+- [Insight](#Insight)
 
 # Objective
 
@@ -355,4 +353,5 @@ order by score_group
 Link to the dynamic dashboard in Tableau Public: 
 https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes
 
-# Data visualization in PowerBI
+# Insight
+
