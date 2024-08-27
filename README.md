@@ -137,7 +137,7 @@ ORDER BY total_profit DESC
 |France |  918969.28|	 87871.23|                     10%|
 |Italy  |  192105.24|	 20852.22|                     11%|
 
---> France is the market that generate highest sales, however Germany is the most profitable market, which generate the highest profit rate at 12%. Italy has smallest sales however ranked in 2nd in profit margin. 
+-> France is the market that generate highest sales, however Germany is the most profitable market, which generate the highest profit rate at 12%. Italy has smallest sales however ranked in 2nd in profit margin. 
 
 ### Sales and Profit by Category
 
@@ -164,7 +164,7 @@ ORDER BY total_sales desc
 |Office Supplies |	52840.15  |	27.73%           |	11446.79  |	55.82%            |	22%          |
 |Technology      |	33519.78  |	17.59%           |	5545.85   |	27.04%            |	17%          |
 
---> Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
+-> Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
 
 
 ### Non-profitable products
@@ -273,6 +273,13 @@ WHERE
 |Furniture	        |9-3/4 Diameter Round Wall Clock	    |84             |
 |Technology	        |Logitech K350 2.4Ghz Wireless Keyboard	|58             |
 
+|Category    | Product_Name| sold_quantity | 
+|---------------|---------------|----------------------|
+|Office Supplies	      |Easy-staple paper	            |183                  |
+|Furniture        |9-3/4 Diameter Round Wall Clock	        |84                  |
+|Technology        |Logitech K350 2.4Ghz Wireless Keyboard	        |58                  |
+
+
 --> These products are best sellers in each categories, with staple paper of the higest sold quantity.
 
 ### Distribution of customers by country
@@ -292,12 +299,20 @@ GROUP BY Country
 ORDER BY customer_count DESC
 ;
 ```
-|Country	|Average_score	|Customer_count	|Percentage|
+|Country	|Average_score	|Customer_count	|Customer_count|
 |-----------|---------------|---------------|----------|
 |USA	    |42	            |254	        |32        |
 |France	    |47	            |246	        |31        |
 |Germany	|48	            |241	        |30        |
 |Italy	    |53	            |59	            |7         |
+
+|Country    | Average_score| Customer_count | Customer_count|
+|-----------|--------------|----------------|---------------|
+|USA	    |42	           |254	            |32             |
+|France	    |47	           |246	            |31             |
+|Germany	|48	           |30              |30             |
+|Italy	    |53	           |59	            |7              |
+
 
 --> Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
 
