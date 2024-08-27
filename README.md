@@ -1,6 +1,6 @@
 # Data Porfolio: Sales_analysis using MySQL & Tableau.
 
-This is an DEA on sales dataset. 
+This is an Data Exproration Analysis on sales dataset. 
 
 😎😎
 
@@ -151,11 +151,11 @@ ORDER BY total_sales desc
 ;
 ```
 
-|Category| total_sales| sales_percentage|total_profit|profit_percentage| profit_margin|
-|---|---|---|---|---|---|
-|Furniture|	104222.25|	54.69%|	3515.62|	17.14%|	3%|
-|Office Supplies|	52840.15|	27.73%|	11446.79|	55.82%|	22%|
-|Technology|	33519.78|	17.59%|	5545.85|	27.04%|	17%|
+|Category        | total_sales| sales_percentage |total_profit|profit_percentage  | profit_margin|
+|---             |---         |---               |---         |---                |---           |
+|Furniture       |	104222.25 |	54.69%           |	3515.62   |	17.14%            |	3%           |
+|Office Supplies |	52840.15  |	27.73%           |	11446.79  |	55.82%            |	22%          |
+|Technology      |	33519.78  |	17.59%           |	5545.85   |	27.04%            |	17%          |
 
 --> Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
 
@@ -180,13 +180,13 @@ HAVING total_profit < 0
 ORDER BY total_profit ASC;
 ```
 
-|Category| Sub_Category| country| total_sales| total_profit|
-|---|---|---|---|---|
-|Furniture	|Tables	|USA	|8092.9	|-867.24|
-|Furniture	|Tables	|France	|2629.48	|-855.91|
-|Furniture	|Tables	|Germany	|4759.56	|-774.69|
-|Furniture	|Bookcases	|USA	|5879.05	|-286.2|
-|Furniture	|Tables	|Italy	|2750.81	|-210.67|
+|Category   | Sub_Category| country | total_sales| total_profit  |
+|-----------|-------------|---------|------------|---------------|
+|Furniture	|Tables	      |USA	    |8092.9	     |-867.24        |
+|Furniture	|Tables	      |France	|2629.48	 |-855.91        |
+|Furniture	|Tables	      |Germany	|4759.56	 |-774.69        |
+|Furniture	|Bookcases	  |USA	    |5879.05	 |-286.2         |
+|Furniture	|Tables	      |Italy	|2750.81	 |-210.67        |
 
 --> Table subcategory has generated no profit at all, even though it still generate high sales in all countries. In US, bookcases are also in the same position.
 
@@ -221,13 +221,13 @@ LIMIT 5
 ;
 ```
 
-| Order_ID	|Sales	|Quantity	|Discount	|Profit	|Order_Date	|Shipping_Date	|Product_ID	|Product_Name	|Category	|Sub_Category	|Country	|City	|Score|
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|7615	|4404.9	|5	|0	|1013.127	|2022-06-08	|2022-06-11	|27	|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|Germany	|KÃ¶ln	|17|
-|8270	|4228.704	|6	|0.2	|158.5764	|2022-03-18	|2022-04-13	|27|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|Italy	|Torino	|43|
-|9127	|4228.704	|6	|0.2	|158.5764	|2022-09-03	|2022-09-26	|27	|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|France	|Reims	|23|
-|9775	|4228.704	|6	|0.2	|158.5764	|2022-11-24	|2022-12-03	|27	|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|Italy	|Bergamo	|52|
-|8515	|2396.2656	|4	|0.32	|-317.1528	|2022-08-05	|2022-08-18	|27	|Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	|USA	|Portland	|0|
+|Order_ID|Sales	    |Quantity	|Discount	|Profit	    |Order_Date	|Shipping_Date	|Product_ID	|Product_Name	                                                |Category	|Sub_Category	|Country	|City	 |Score |
+|-------|-----------|-----------|-----------|-----------|-----------|---------------|-----------|---------------------------------------------------------------|-----------|---------------|-----------|--------|------|
+|7615	|4404.9	    |5	        |0	        |1013.127	|2022-06-08	|2022-06-11	    |27	        |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |Germany	|KÃ¶ln	 |17    |
+|8270	|4228.704	|6	        |0.2	    |158.5764	|2022-03-18	|2022-04-13	    |27         |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |Italy	    |Torino	 |43    |
+|9127	|4228.704	|6	        |0.2	    |158.5764	|2022-09-03	|2022-09-26	    |27	        |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |France	    |Reims	 |23    |
+|9775	|4228.704	|6	        |0.2	    |158.5764	|2022-11-24	|2022-12-03	    |27	        |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |Italy	    |Bergamo |52    |
+|8515	|2396.2656	|4	        |0.32	    |-317.1528	|2022-08-05	|2022-08-18	    |27	        |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |USA	    |Portland|0     |
 
 --> Bookcases orders generate high sales, however they don't guarantee profit all the time, for example the case of US order. 
 
@@ -260,11 +260,11 @@ WHERE
 ;
 
 ```
-|Category	|Product_Name	|sold_quantity|
-|---|---|---|
-|Office Supplies	|Easy-staple paper	|183|
-|Furniture	|9-3/4 Diameter Round Wall Clock	|84|
-|Technology	|Logitech K350 2.4Ghz Wireless Keyboard	|58|
+|Category	        |Product_Name	                        |sold_quantity  |
+|-------------------|---------------------------------------|---------------|
+|Office Supplies	|Easy-staple paper	                    |183            |
+|Furniture	        |9-3/4 Diameter Round Wall Clock	    |84             |
+|Technology	        |Logitech K350 2.4Ghz Wireless Keyboard	|58             |
 
 --> These products are best sellers in each categories, with staple paper of the higest sold quantity.
 
@@ -286,11 +286,11 @@ ORDER BY customer_count DESC
 ;
 ```
 |Country	|Average_score	|Customer_count	|Percentage|
-|---|---|---|---|
-|USA	|42	|254	|32|
-|France	|47	|246	|31|
-|Germany	|48	|241	|30|
-|Italy	|53	|59	|7|
+|-----------|---------------|---------------|----------|
+|USA	    |42	            |254	        |32        |
+|France	    |47	            |246	        |31        |
+|Germany	|48	            |241	        |30        |
+|Italy	    |53	            |59	            |7         |
 
 --> Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
 
@@ -305,8 +305,8 @@ FROM
 ```
 
 |MIN(score)	|MAX(Score)|
-|---|---|
-|0	|100|
+|-----------|----------|
+|0	        |100       |
 
 --> min value of score is 0 and max value is 100, so the range can be divided into 5 bins. 
 
@@ -329,13 +329,13 @@ GROUP BY score_group
 order by score_group
 ;
 ```
-|score_group	|customer_count|customers_percentage|
-|---|---|---|
-| under 20	|205	|26%|
-|20-39	|150	|19%|
-|40-59	|159	|20%|
-|60-79	|135	|17%|
-|80 and above	|151	|19%|
+|score_group	|customer_count |customers_percentage|
+|---------------|---------------|--------------------|
+| under 20	    |205	        |26%                 |
+|20-39	        |150	        |19%                 |
+|40-59	        |159	        |20%                 |
+|60-79	        |135	        |17%                 |
+|80 and above	|151	        |19%                 |
 
 --> the largest group of customers has score of under 20. 
 
