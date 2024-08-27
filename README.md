@@ -1,4 +1,4 @@
-# Data Porfolio: Sales_analysis using MySQL & Tableau.
+# Data Porfolio: Sales Analysis using MySQL & Tableau.
 
 This is an Data Exproration Analysis on sales dataset created by Baraa Khatib Salkini. Tableau visualization is also inspired by his Tableau Dashboard. 
 
@@ -336,13 +336,13 @@ GROUP BY score_group
 order by score_group
 ;
 ```
-|score_group	|customer_count |customers_percentage|
-|---------------|---------------|--------------------|
-| under 20	    |205	        |26%                 |
-|20-39	        |150	        |19%                 |
-|40-59	        |159	        |20%                 |
-|60-79	        |135	        |17%                 |
-|80 and above	|151	        |19%                 |
+score_group	|customer_count |customers_percentage
+---------------|---------------|--------------------
+under 20	    |205	        |26%                 
+20-39	        |150	        |19%                 
+40-59	        |159	        |20%                 
+60-79	        |135	        |17%                 
+80 and above	|151	        |19%                 
 
 --> the largest group of customers has score of under 20. 
 
@@ -357,7 +357,8 @@ order by score_group
 
 ![Products Dashboard](Assets/images/products_dashboard.png)
 
-Link to the dynamic dashboard in Tableau Public: 
+Link to the dynamic dashboard in Tableau Public:
+
 https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes
 
 # Insight
