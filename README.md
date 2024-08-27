@@ -2,7 +2,7 @@
 
 This is an Data Exproration Analysis on sales dataset created by Baraa Khatib Salkini. Tableau visualization is also inspired by his Tableau Dashboard. 
 
-😎😎
+📊📊📊
 
 # Table of content
 
