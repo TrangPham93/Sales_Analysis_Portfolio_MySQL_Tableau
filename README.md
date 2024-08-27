@@ -336,13 +336,13 @@ GROUP BY score_group
 order by score_group
 ;
 ```
-score_group	|customer_count |customers_percentage
----------------|---------------|--------------------
-under 20	    |205	        |26%                 
-20-39	        |150	        |19%                 
-40-59	        |159	        |20%                 
-60-79	        |135	        |17%                 
-80 and above	|151	        |19%                 
+|score_group	|customer_count |customers_percentage|
+|---------------|---------------|--------------------|
+|under_20	    |205	        |26%                 |
+|20-39	        |150	        |19%                 |
+|40-59	        |159	        |20%                 |
+|60-79	        |135	        |17%                 |
+|80_and_above	|151	        |19%                 |
 
 
 |Category   | Sub_Category| country | total_sales| total_profit  |
