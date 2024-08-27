@@ -12,14 +12,14 @@ This is an Data Exproration Analysis on sales dataset created by Baraa Khatib Sa
     - [Data cleaning](#data-cleaning)
     - [Data exploration](#data-exploration)
         - [Sales and Profit by Country](#sales-and-profit-by-country)
-        - [Sales and Profit by Category](#Sales-and-Profit-by-Category) 
-        - [Non-profitable products](#Non-profitable-products)
-        - [Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
-        - [Top selling products in each category](#Top-selling-products-in-each-category)
-        - [Distribution of customers by country](#Distribution-of-customers-by-country)
-        - [Distribution of customers by score](#Distribution-of-customers-by-score)
-- [Data visualization in Tableau](#Data-visualization-in-Tableau)
-- [Insight](#Insight)
+        - [Sales and Profit by Category](#sales-and-profit-by-category) 
+        - [Non-profitable products](#non-profitable-products)
+        - [Orders with highest sales during 2022](#orders-with-highest-sales-during-2022)
+        - [Top selling products in each category](#top-selling-products-in-each-category)
+        - [Distribution of customers by country](#distribution-of-customers-by-country)
+        - [Distribution of customers by score](#distribution-of-customers-by-score)
+- [Data visualization in Tableau](#data-visualization-in-tableau)
+- [Insight](#insight)
 
 # Objective
 
