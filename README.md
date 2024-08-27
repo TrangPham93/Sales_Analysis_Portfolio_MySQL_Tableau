@@ -164,7 +164,7 @@ ORDER BY total_sales desc
 |Office Supplies |	52840.15  |	27.73%           |	11446.79  |	55.82%            |	22%          |
 |Technology      |	33519.78  |	17.59%           |	5545.85   |	27.04%            |	17%          |
 
-⇒ Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
+⇛ Highest sales is the funiture category, generating 54.69% of total sales. However, office supplies generate highest profit at 55.82% of total profit. Profit margin of funiture is only 3% while of office supplies is 22%. Tenology has the 2nd highest profit margin. 
 
 
 ### Non-profitable products
@@ -195,7 +195,7 @@ ORDER BY total_profit ASC;
 |Furniture	|Bookcases	  |USA	    |5879.05	 |-286.2         |
 |Furniture	|Tables	      |Italy	|2750.81	 |-210.67        |
 
---> Table subcategory has generated no profit at all, even though it still generate high sales in all countries. In US, bookcases are also in the same position.
+⇛ Table subcategory has generated no profit at all, even though it still generate high sales in all countries. In US, bookcases are also in the same position.
 
 ### Orders with highest sales during 2022
 
@@ -236,7 +236,7 @@ LIMIT 5
 |9775	|4228.704	|6	        |0.2	    |158.5764	|2022-11-24	|2022-12-03	    |27	        |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |Italy	    |Bergamo |52    |
 |8515	|2396.2656	|4	        |0.32	    |-317.1528	|2022-08-05	|2022-08-18	    |27	        |Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	|Furniture	|Bookcases	    |USA	    |Portland|0     |
 
---> Bookcases orders generate high sales, however they don't guarantee profit all the time, for example the case of US order. 
+⇛ Bookcases orders generate high sales, however they don't guarantee profit all the time, for example the case of US order. 
 
 ### Top selling products in each category
 
@@ -276,7 +276,7 @@ WHERE
 |Technology      |Logitech K350 2.4Ghz Wireless Keyboard|58             |
 
 
---> These products are best sellers in each categories, with staple paper of the higest sold quantity.
+⇛ These products are best sellers in each categories, with staple paper of the higest sold quantity.
 
 ### Distribution of customers by country
 
@@ -305,7 +305,7 @@ ORDER BY customer_count DESC
 |Italy	    |53	           |59	            |7              |
 
 
---> Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
+⇛ Germany, US and France have equal proportion of the total number of customers, while Italy only has 7% of total number of customers. 
 
 ### Distribution of customers by score
 
@@ -321,7 +321,7 @@ FROM
 |-----------|----------|
 |0	        |100       |
 
---> min value of score is 0 and max value is 100, so the range can be divided into 5 bins. 
+⇛ Min value of score is 0 and max value is 100, so the range can be divided into 5 bins. 
 
 ```sql
 
@@ -353,7 +353,7 @@ order by score_group
 |60-79	        |135	        |17%                   |
 |80 and above   |151	        |19%                   |
 
---> the largest group of customers has score of under 20. 
+⇛ The largest group of customers has score of under 20. 
 
 
 
@@ -372,5 +372,9 @@ https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306
 
 # Insight
 
+After reviewing the sales data, it's obvious that Germany, US and France are main markets while Italian market is relatively small in term of sales and profit. Italian market has the potential to increase sales and profit in the future, since it also generate high profit margin. 
 
+Furniture generates highest sales, but is not automatically the most profitable category. On the contrary, furniture is the least profitable, in which table has generated loss in all markets. Table's sales has increased significantly from previous year, which is not great in this case. Increasing table's retail price or reducing this product's proportion in total sales would help to limit table's negative impact on the bottom line. 
+
+We should carefully observing bookcase's sales and profit, which is potentially similar to table's situation. 
 
