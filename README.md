@@ -360,7 +360,7 @@ order by score_group
 
 # Data visualization in Tableau
 
-[Link to the dynamic dashboard in Tableau Public]: https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes
+[Link to the dynamic dashboard in Tableau Public](https://public.tableau.com/app/profile/trang1217/viz/Sales_Dashboard_17241642306220/ProductsDashboard?publish=yes)
 
 ![Sales Dashboard](Assets/images/sales_dashboard.png)
 
