@@ -336,31 +336,16 @@ GROUP BY score_group
 order by score_group
 ;
 ```
-oo
-|score_group	|customer_count |customers_percentage|
-|---------------|---------------|--------------------|
-|under_20	    |205	        |26%                 |
-|20-39	        |150	        |19%                 |
-|40-59	        |159	        |20%                 |
-|60-79	        |135	        |17%                 |
-|80_and_above	|151	        |19%                 |
 
 
-|score_group   | customer_count| customers_percentage | 
-|-----------|-------------|---------|
-|under 20|205      |26%    |
-|20-39	|150	      |19%  |
-|40-59	|159	      |20% |
-|60-79	|135	  |17%   |
-|80 and above|151	      |19% |
 
-|Category   | Sub_Category| country | total_sales| total_profit  |
-|-----------|-------------|---------|------------|---------------|
-|Furniture	|Tables	      |USA	    |8092.9	     |-867.24        |
-|Furniture	|Tables	      |France	|2629.48	 |-855.91        |
-|Furniture	|Tables	      |Germany	|4759.56	 |-774.69        |
-|Furniture	|Bookcases	  |USA	    |5879.05	 |-286.2         |
-|Furniture	|Tables	      |Italy	|2750.81	 |-210.67        |
+|score_group    | customer_count| customers_percentage | 
+|---------------|---------------|----------------------|
+|under 20       |205            |26%                   |
+|20-39	        |150	        |19%                   |
+|40-59	        |159	        |20%                   |
+|60-79	        |135	        |17%                   |
+|80 and above   |151	        |19%                   |
 
 --> the largest group of customers has score of under 20. 
 
