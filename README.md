@@ -336,6 +336,7 @@ GROUP BY score_group
 order by score_group
 ;
 ```
+oo
 |score_group	|customer_count |customers_percentage|
 |---------------|---------------|--------------------|
 |under_20	    |205	        |26%                 |
