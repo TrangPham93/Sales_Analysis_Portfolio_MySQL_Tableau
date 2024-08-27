@@ -346,13 +346,13 @@ oo
 |80_and_above	|151	        |19%                 |
 
 
-|score_group   | customer_count| customers_percentage | total_sales| total_profit  |
-|-----------|-------------|---------|------------|---------------|
-|Furniture	|Tables	      |USA	    |8092.9	     |-867.24        |
-|Furniture	|Tables	      |France	|2629.48	 |-855.91        |
-|Furniture	|Tables	      |Germany	|4759.56	 |-774.69        |
-|Furniture	|Bookcases	  |USA	    |5879.05	 |-286.2         |
-|Furniture	|Tables	      |Italy	|2750.81	 |-210.67        |
+|score_group   | customer_count| customers_percentage | 
+|-----------|-------------|---------|
+|Furniture	|205      |USA	    |
+|Furniture	|150	      |France	|
+|Furniture	|159	      |Germany	|
+|Furniture	|135	  |USA	    |
+|Furniture	|151	      |Italy	|
 
 |Category   | Sub_Category| country | total_sales| total_profit  |
 |-----------|-------------|---------|------------|---------------|
