@@ -6,12 +6,12 @@ This is an Data Exproration Analysis on sales dataset created by Baraa Khatib Sa
 
 # Table of content
 
-- [Objective](#Objective)
-- [Data source](#Data-source)
-- [Data exploration in MySQL](#Data-exploration-in-MySQL)
-    - [Data cleaning](#Data-cleaning)
-    - [Data exploration](#Data-exploration)
-        - [Sales and Profit by Country](#Sales-and-Profit-by-Country)
+- [Objective](#objective)
+- [Data source](#data-source)
+- [Data exploration in MySQL](#data-exploration-in-mysql)
+    - [Data cleaning](#data-cleaning)
+    - [Data exploration](#data-exploration)
+        - [Sales and Profit by Country](#sales-and-profit-by-country)
         - [Sales and Profit by Category](#Sales-and-Profit-by-Category) 
         - [Non-profitable products](#Non-profitable-products)
         - [Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
