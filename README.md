@@ -12,7 +12,7 @@ This is an Data Exproration Analysis on sales dataset created by Baraa Khatib Sa
     - [Data cleaning](#Data-cleaning)
     - [Data exploration](#Data-exploration)
         - [Sales and Profit by Country](#Sales-and-Profit-by-Country)
-        - [Sales & Profit by Category](#Sales-&-Profit-by-Category)
+        - [Sales and Profit by Category](#Sales-and-Profit-by-Category) 
         - [Non-profitable products](#Non-profitable-products)
         - [Orders with highest sales during 2022](#Orders-with-highest-sales-during-2022)
         - [Top selling products in each category](#Top-selling-products-in-each-category)
@@ -139,7 +139,7 @@ ORDER BY total_profit DESC
 
 --> France is the market that generate highest sales, however Germany is the most profitable market, which generate the highest profit rate at 12%. Italy has smallest sales however ranked in 2nd in profit margin. 
 
-### Sales & Profit by Category
+### Sales and Profit by Category
 
 ```sql
 SELECT 
